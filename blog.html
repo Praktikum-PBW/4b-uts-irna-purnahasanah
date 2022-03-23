@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content=" Irna Purnahasanah" />
+
+    <!-- Bootstrap CSS - ke lokal-->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="./assets/style/style.css" />
+
+    <!-- icon di Tab -->
+    <link rel="icon" href="./assets/icon/IRENPHASNA.png" />
+
+    <title>Blog : Irenphasna</title>
+
+    <style>
+      .card-title {
+        text-align: center;
+        font-weight: bold;
+        color: #f4b2bc;
+      }
+
+      .card {
+        border: 1px solid black;
+        margin: 50px 0;
+      }
+
+      .card-text {
+        text-align: justify;
+      }
+
+      img {
+        /* foto nge shape */
+        border-radius: 50px;
+      }
+
+      .card img {
+        /* gambar bergerak membesar 1 detik ketika kursor di dekatkan gambar */
+        transition: 0.3s;
+
+        box-sizing: border-box;
+
+        box-shadow: 0px 5px 14px #f4b2bc;
+      }
+
+      img:hover {
+        /* animasi memperbesar gambar ketika kursor didekatkan */
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 1. (online) Optional JavaScript; Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- 2.Background Noise -->
+    <div class="noise"></div>
+
+    <!-- 3.Custome Cursor -->
+    <div class="box cursor"></div>
+
+    <!-- 4.NAVBAR or Header -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <!-- a. Container/Wadah Navbar(Parent) -->
+      <div class="container">
+        <!-- a1. ICON & WEBSIITE TEXT NAME -->
+        <a class="navbar-brand fw-bolder px-4" href="#topik" style="text-decoration: line-through"> IRENPHASNA </a>
+
+        <!-- a2. Button Toggler (muncul ketika di minimize) -->
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon first"></span>
+          <span class="toggler-icon second"></span>
+          <span class="toggler-icon third"></span>
+        </button>
+
+        <!-- a3. Item/Element Navbar(Child) : Home, Blog, About, Contact Me -->
+        <div class="collapse-toggle navbar-collapse" id="navbarNav">
+          <!-- TABLE ITEM -->
+          <ul class="navbar-nav ms-auto">
+            <!-- 1. Item Home -->
+            <li class="nav-item">
+              <!-- Item Active -->
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <!-- 2. Item Blog -->
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="blog.html">Blog</a>
+            </li>
+
+            <!-- 3. Item About -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <!-- 4. Item Contact Me -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Card -->
+    <section class="cardd" id="topik">
+      <div class="blognih">
+        <div class="row mt-4">
+          <div class="col-md-4 mb-5">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (1).jpg" class="card-img-top" alt="alam" />
+              <div class="card-body">
+                <h5 class="card-title">Senang</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn text-light" style="background-color: #f4b2bc">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (4).jpg" class="card-img-top" alt="bukit" />
+              <div class="card-body">
+                <h5 class="card-title">Galak</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn text-light" style="background-color: #f4b2bc">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (6).jpg" class="card-img-top" alt="hutan" />
+              <div class="card-body">
+                <h5 class="card-title">Malu</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn text-light" style="background-color: #f4b2bc">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (2).jpg" class="card-img-top" alt="Danau" />
+              <div class="card-body">
+                <h5 class="card-title">Kepo</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn text-light" style="background-color: #f4b2bc">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (5).jpg" class="card-img-top" alt="Air Terjun" />
+              <div class="card-body">
+                <h5 class="card-title">Tidur</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn text-light" style="background-color: #f4b2bc">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../Irna - Praktikum Pertemuan 5 (08-14032022)/bootstrap-5.1.3-dist/img/kucing (3).jpg" class="card-img-top" alt="Pantai" />
+              <div class="card-body">
+                <h5 class="card-title">Ngantuk</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi quisquam, velit culpa, facere doloribus expedita reiciendis itaque consectetur odit nisi? Aspernatur, illum quasi! Alias nisi consequatur expedita
+                </p>
+
+                <a href="#" class="btn text-light" style="background-color: #f4b2bc">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

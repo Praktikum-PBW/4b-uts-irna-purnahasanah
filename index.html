@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content=" Irna Purnahasanah" />
+
+    <!-- Bootstrap CSS - ke lokal-->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="./assets/style/style.css" />
+
+    <!-- icon di Tab -->
+    <link rel="icon" href="./assets/icon/IRENPHASNA.png" />
+
+    <title>Home : Irna Purnahasanah</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <!-- 1. (online) Optional JavaScript; Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- 2.Background Noise -->
+    <div class="noise"></div>
+
+    <!-- 3.Custome Cursor -->
+    <div class="box cursor"></div>
+
+    <section class="showcase">
+      <h1>Ei Yoo Wassap,</h1>
+      <h4>Welkom on my Blog</h4>
+
+      <h3>Pooloow sosmed q ya cingu, ntar q polbek</h3>
+      <div class="crsr"></div>
+
+      <script>
+        const cursor = document.querySelector('.crsr');
+        document.addEventListener('mousemove', (e) => {
+          cursor.style.left = e.pageX + 'px';
+          cursor.style.top = e.pageY + 'px';
+        });
+      </script>
+
+      <div class="icon-bar sosmed">
+        <!-- 1.INSTAGRAM -->
+        <div class="button">
+          <div class="icon">
+            <a href="https://www.instagram.com/irenphasna/" class="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- 2.LINKEDIN -->
+        <div class="button">
+          <div class="icon">
+            <a href="https://www.linkedin.com/in/irnap16/" class="Linkedin">
+              <i class="bi bi-linkedin"> </i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3.GITHUB -->
+        <div class="button">
+          <div class="icon">
+            <a href="https://github.com/Irnap16" class="Github"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <marquee Class="kata fixed-bottom" style="color: white">
+        Perhatian! Website ini dibuat dengan kemampuan yang di bawah rata - rata wkwkwk. MAAPKAN SAYAA, SAYA SUDAH BERUSAHAA, YA ALLAH PUSING BANGET NGOTAK NGATIK HTML CSS BOOSTRAP. BISSMILLAH JADI PENYANYI!!! DOAKAN TEMAN TEMAN.
+      </marquee>
+    </section>
+
+    <!-- 4.NAVBAR or Header -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <!-- a. Container/Wadah Navbar(Parent) -->
+      <div class="container">
+        <!-- a1. ICON & WEBSIITE TEXT NAME -->
+        <a class="navbar-brand fw-bolder px-4" href="index.html" style="text-decoration: line-through"> IRENPHASNA </a>
+
+        <!-- a2. Button Toggler (muncul ketika di minimize) -->
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon first"></span>
+          <span class="toggler-icon second"></span>
+          <span class="toggler-icon third"></span>
+        </button>
+
+        <!-- a3. Item/Element Navbar(Child) : Home, Blog, About, Contact Me -->
+        <div class="collapse-toggle navbar-collapse" id="navbarNav">
+          <!-- TABLE ITEM -->
+          <ul class="navbar-nav ms-auto">
+            <!-- 1. Item Home -->
+            <li class="nav-item fw-bold">
+              <!-- Item Active -->
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <!-- 2. Item Blog -->
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+
+            <!-- 3. Item About -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <!-- 4. Item Contact Me -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
