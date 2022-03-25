@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+body {
+  /* BACKGROUND */
+  background-color: #183b25;
+  display: flex;
+}
+
+/* 1.Background - Noise */
+
+.noise::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: '';
+
+  opacity: 0.09;
+  z-index: 1000;
+  pointer-events: none;
+  background: url(../img/noise.gif);
+}
+
+/* 2. Cursor */
+html {
+  cursor: url('../icon/cursor.png'), auto;
+}
+
+/* 3. NAVBAR */
+.container {
+  position: relative;
+  top: 50px;
+  left: auto;
+
+  z-index: 500;
+  height: 40px;
+
+  /* SHAPE NAVBAR */
+  backdrop-filter: blur(1.5px);
+  border-radius: 25px;
+
+  border: 2px solid #f4b2bc;
+  box-shadow: 0px 0px 20px #f4b2bc;
+
+  /* animasi shape*/
+  transition: all 0.5s ease;
+}
+
+.navbar-brand {
+  padding: 2px;
+}
+.navbar-nav {
+  padding: 2px;
+}
+
+/* ANiMATION NAVBAR */
+.nav-link {
+  /* Teks Item Navbar */
+  text-align: right;
+  margin: 8px;
+}
+
+.nav-link:hover {
+  color: #f4b2bc !important;
+}
+
+.nav-item {
+  display: block;
+
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.nav-item ::after {
+  display: block;
+
+  margin: 0 auto;
+  content: '';
+
+  /* ANimasi Garis Putih */
+  width: 0;
+  height: 1px;
+  background: #f4b2bc;
+
+  transition: 0;
+  border-radius: 2px;
+
+  transition: 0.2s;
+}
+
+a{
+  color: #f4b2bc; !important;
+}
+
+.nav-item :hover::after {
+  width: 100%;
+}
+
+/* Animation Toggler Menu */
+.navbar-toggler {
+  border: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.toggler-icon {
+  display: block;
+  cursor: pointer;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: #f4b2bc;
+  border-radius: 5px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.second {
+  margin: 2px auto;
+}
+
+.navbar-toggler .first {
+  transform: rotate(45deg);
+  transform-origin: 20% 90%;
+}
+
+.navbar-toggler .second {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .third {
+  transform: rotate(-45deg);
+  transform-origin: 20% 90%;
+}
+
+.navbar-toggler.collapsed .first {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .second {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .third {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+  /* warna toogler menu */
+  background-color: #f4b2bc;
+}
+
+/* Sticky SOSMED */
+
+.icon-bar.sosmed{
+  display: block;
+  justify-content: center;
+  padding:40px;
+  text-align: center;
+}
+
+.icon-bar.sosmed .button {
+  display: inline-block;
+  margin: 0 10px;
+  overflow: hidden;
+
+  background: #fff;
+  border-radius: 30px;
+
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+  color: #183b25;
+}
+
+.icon i {
+  color: #183b25;
+  
+}
+
+
+.icon-bar.sosmed .button:hover {
+  width: 50px;
+
+  box-shadow: 0px 0px 10px #ffffff;
+}
+
+.icon-bar.sosmed .button .icon {
+  display: inline-block;
+
+  height: 25px;
+  width: 25px;
+
+  border-radius: 30px;
+
+  line-height: 26.9px;
+
+  box-sizing: border-box;
+
+  transition: all 0.3s ease-out;
+}
+
+.icon-bar.sosmed .button:hover .icon a {
+  color: #f4b2bc;
+}
+.icon-bar.sosmed .button span {
+  color: #183b25;
+
+  font-size: 13px;
+  font-weight: 100;
+
+  line-height: 5px;
+  margin-left: 2px;
+
+  transition: all 0.3s ease-out;
+}
+
+.icon i:hover {
+  color: #f4b2bc;
+}
+
+/* CURSOR BACKGROUND */
+.showcase h1 {
+  font-size: 4em;
+  color: #f4b2bc;
+  
+  text-align: center;
+}
+
+.showcase h4{
+  font-size: 1em;
+  color: #ffffff;
+  text-align: center;
+  
+}
+
+.showcase h3{
+  font-size: 1em;
+  color: #ffffff; !important;
+  text-align: center;
+  
+}
+body {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.5s;
+  z-index: 1.5;  
+}
+
+.crsr{
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+  transition: 0.1s;
+}
+
+h1:hover ~ .crsr{
+  transform: scale(4);
+}
+
